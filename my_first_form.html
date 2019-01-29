@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>My First HTML Form</title>
+    </head>
+    <body>
+        <h2>
+            User Login
+        </h2>
+            <form method="Post" action="http://request-inspector.glitch.me/">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username">
+                <label for="username">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password">
+                <button type="submit">Login</button>
+            </form>
+        <h2>
+            Compose and Email
+        </h2>
+            <form method="Post" action="http://request-inspector.glitch.me/">
+                <label for="To"></label>
+                <input type="text" id="To" name="To" placeholder="email to:">
+                
+                <label for="sent"><input type="checkbox" id="sent" name="sent" value="yes" checked>Save copy in the sent folder</label>
+
+                <label for="From"></label>
+                <input type="text" id="From" name="From" placeholder="email from">
+
+                <label for="Subject"></label>
+                <input type="text" id="Subject" name="Subject" placeholder="email subject">
+
+                <label for="Body"></label>
+                <textarea id="Body" name="Body" rows="5" cols="40" placeholder="email content here"></textarea>
+
+                <button type="send">Send</button>
+            </form>
+        <h2>
+            Multiple Choice Test
+        </h2>
+            <form method="Post" action="http://request-inspector.glitch.me/">
+                <label>What will the Weather be like tomorrow ?</label>
+                <label><input type="radio" id="day" name="weather[]" value="rain">Rain</label>
+                <label><input type="radio" id="day" name="weather[]" value="haze">Haze</label>
+                <label><input type="radio" id="day" name="weather[]" value="fog">Fog</label>
+                <label><input type="radio" id="day" name="weather[]" value="apocalyptic">Apocalyptic</label>
+                <label>What would be a good combination ?</label>
+                <label><input type="checkbox" id="cereal" name="cereal" value="Lucky Charms">Lucky Charms</label>
+                <label><input type="checkbox" id="cereal" name="cereal" value="Fruit Loops">Fruit Loops</label>
+                <label><input type="checkbox" id="cereal" name="cereal" value="Rasin Bran">Rasin Bran</label>
+                <button type="send">Submit Choice</button>
+            </form>
+        <h2>
+            Multiple Choice Test
+        </h2>
+            <form method="Post" action="http://request-inspector.glitch.me/">
+                <label for="yesorno">Do You like Apples ?: </label>
+                <select id="yesorno" name="yesorno">
+                    <option value="1" selected>yes</option>
+                    <option value="0">no</option>
+                </select>
+                <button type="send">Apple yes or no</button>
+            </form>
+        <h2>
+            Fruit Multiple Choice Test
+        </h2>
+            <form method="Post" action="http://request-inspector.glitch.me/">
+                <label for="fruitchoice">Which Fruits do you like ?: </label>
+                <select id="fruitchoice" name="fruitchoice[]" multiple>
+                        <option value="apple`">apple</option>
+                        <option value="orange">orange</option>
+                        <option value="peach">peach</option>
+                        <option value="pineapple">pineapple</option>
+                    </select>
+                <button type="send">Fruit Choices</button>
+            </form>
+        </body>
+</html>

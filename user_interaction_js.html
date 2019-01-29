@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>User Interaction Js</title>
+</head>
+<body>
+        <!-- <script src="js/user-interaction.js"></script> -->
+    <script>
+        // copy is also in js file...
+    function whoAreYou(respondName, alertResponse, nextQuestion) {
+
+        while (respondName === "") {
+            respondName = prompt("what is your name ?");
+            console.log("asking for a name...");
+        }
+
+        alertResponse = ("The name you gave is: " + respondName);
+        console.log("Name given is " + respondName + "...");
+
+        nextQuestion = confirm("dD you like pizza " + respondName+ " ?");
+
+        if (nextQuestion) {
+            alertResponse = alert('So we both like Pizza then ' + respondName + ' !');
+        } else {
+            alertResponse = alert("Very disappointing " + respondName + ", I'm not sure what to say...");
+        }
+    }
+
+        whoAreYou(respondName,alertResponse),nextQuestion;
+
+// TODO: Ask the user for their name.
+//       Keep asking if an empty input is provided.
+
+// TODO: Show an alert message that welcomes the user based on their input.
+
+// TODO: Ask the user if they like pizza.
+//       Based on their answer show a creative alert message.
+
+// *** alert ***
+    // console.log("before alert...");
+    // alert("something is going to happen...");
+    // console.log("alert...");
+
+// *** confirm ***
+    // console.log("before confirm...");
+    // var confirmed = confirm('are you sure you want to do xyz ?');
+    
+    // if (confirmed) {
+    // console.log("user clicked ok");
+    // } else {
+    //     console.log("user clicked cancel");
+    // }
+
+    // console.log("after confirmed...");
+
+// *** prompt ***
+    // console.log("before prompt...");
+    // var response = prompt("what is your favorite color ?")
+    // alert('Awesome, ' + response + ' is my favorite color too !');
+    // console.log("after prompt...");
+
+
+    </script>
+</body>
+</html>

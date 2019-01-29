@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Break Continue Js</title>
+</head>
+<body>
+    <script>
+        var rand = Math.floor((Math.random()*50)+1)
+        var i = 0;
+        while (i < 50) {
+            i++;
+            if (i == 27) {
+                console.log("this should not be here... at all: " + i)
+                continue;
+            } else if (i % 2 == 0) {
+                continue;
+            } else {
+                console.log("this is an odd number: " + i)
+            }
+        }	
+            console.log("all done");
+
+</script>
+</body>
+</html>
